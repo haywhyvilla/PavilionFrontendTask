@@ -1,0 +1,10 @@
+.sidebar-section {
+  display: flex;
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: #ffffff;
+  width: 260px;
+  position: fixed;
+}
