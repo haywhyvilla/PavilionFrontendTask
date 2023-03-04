@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "./Components/Header/Header";
 
 const App = () => {
-  return <h1 className="card">Hello React</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default App;
