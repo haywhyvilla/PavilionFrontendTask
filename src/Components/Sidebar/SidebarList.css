@@ -1,0 +1,24 @@
+.navbar-items ul li {
+  list-style-type: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.nav-item {
+  color: #909dad;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.color-dark {
+  color: #1d242d;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 19px;
+}
+
+.navbar-items ul li svg {
+  margin-right: 25px;
+  margin-left: 10px;
+}

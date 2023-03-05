@@ -1,4 +1,5 @@
 import React from "react";
+import "./SidebarList.css";
 import {
   MdOutlineDashboard,
   MdHealthAndSafety,
@@ -11,62 +12,66 @@ import {
 } from "react-icons/bs";
 import { GrAtm } from "react-icons/gr";
 import { FaMoneyCheckAlt } from "react-icons/fa";
-import { TbGraph } from "react-icons/tb";
+import { TbGraph, TbMessageDots } from "react-icons/tb";
+import { IoMdSettings } from "react-icons/io";
+import { AiOutlineReconciliation } from "react-icons/ai";
+import { ImHammer2 } from "react-icons/im";
 
 const SidebarList = () => {
   return (
     <React.Fragment>
       <div className="navbar-items">
         <ul>
-          <li className="nav-item">POS Monitoring</li>
-          <li>
+          <li className="color-dark">POS Monitoring</li>
+          <li className="nav-item">
             <MdOutlineDashboard />
             Dashboard
           </li>
-          <li>
+          <li className="nav-item">
             <GrAtm />
             Transactions
             <BsChevronDown />
           </li>
-          <li>
+          <li className="nav-item">
             <MdHealthAndSafety />
             Terminal Health
             <BsChevronDown />
           </li>
-          <li>
+          <li className="nav-item">
             <FaMoneyCheckAlt />
             Settlement
             <BsChevronDown />
           </li>
-          <li>
+          <li className="nav-item">
             <TbGraph />
             Performance
             <BsChevronDown />
           </li>
 
-          <li>
+          <li className="nav-item">
             <BsFillFileEarmarkTextFill />
             Bank Statement
           </li>
-          <li>
+          <li className="nav-item">
             <MdPointOfSale />
             My Terminals
           </li>
-          <li>
-            <MdOutlineDashboard />
-            Dashboard
+          <li className="nav-item">
+            <IoMdSettings />
+            Settings
+            <BsChevronDown />
           </li>
-          <li>
-            <MdOutlineDashboard />
-            Dashboard
+          <li className="nav-item">
+            <TbMessageDots />
+            Message Center
           </li>
-          <li>
-            <MdOutlineDashboard />
-            Dashboard
+          <li className="nav-item">
+            <AiOutlineReconciliation />
+            Reconciliation
           </li>
-          <li>
-            <MdOutlineDashboard />
-            Dashboard
+          <li className="nav-item">
+            <ImHammer2 />
+            Dispute Management
           </li>
         </ul>
       </div>
