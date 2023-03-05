@@ -123,14 +123,23 @@ const DisplayTable = () => {
       <td>{item.merchantName}</td>
       <td>{item.terminalID}</td>
       <td>{item.amount}</td>
-      <td>{item.status}</td>
+      <td>
+        {item.status === true ? (
+          <button className="approved-btn">Approved</button>
+        ) : (
+          <button className="failed-btn">Failed</button>
+        )}
+      </td>
       <td>{item.pan}</td>
-      <td>{item.Receipt}</td>
+      <td>
+        {" "}
+        <span className="veiw">{item.Receipt}</span>
+      </td>
     </tr>
   ));
   return (
     <div>
-      <table className="table table-striped">
+      <table className="table">
         <thead>
           <tr>
             <th>S/N</th>

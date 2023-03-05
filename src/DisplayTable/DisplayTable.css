@@ -1,10 +1,9 @@
 thead {
   background-color: #adbdff;
 }
-
 th {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   color: #1d242d;
 }
@@ -12,4 +11,49 @@ th,
 td,
 tr {
   text-align: center;
+}
+
+tbody {
+  background-color: #f5f7f9;
+}
+
+tr,
+td {
+  border: 1px solid #adbdff;
+  padding: 16px 24px;
+
+  width: 146px;
+  height: 51px;
+}
+.approved-btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 19px;
+  color: #3dd154;
+  padding: 4px 16px;
+  height: 30px;
+  background: #c3f1ca;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+}
+
+.failed-btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 19px;
+  color: #dc1d1d;
+  padding: 4px 16px;
+  height: 30px;
+  background: #fce8e8;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+}
+
+.veiw {
+  color: #4c6fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
 }
