@@ -1,6 +1,8 @@
 import React from "react";
 import "./RecieptPopup.css";
 import cancel from "../Images/cancel.png";
+import Box3 from "./Box3";
+import Box4 from "./Box4";
 
 const RecieptPopup = () => {
   return (
@@ -75,6 +77,10 @@ const RecieptPopup = () => {
             <p>INTELLIFIN</p>
           </div>
           <h5 className="thanks">Thank You For Using Pavilion!</h5>
+          <div className="button-down">
+            <Box3 text="Close" />
+            <Box4 text="Download" />
+          </div>
         </div>
       </div>
     </div>
