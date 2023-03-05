@@ -28,97 +28,98 @@ const DisplayTable = () => {
       Receipt: "Veiw",
     },
     {
-      merchantName: "ABDUL COSMETICS",
-      terminalID: "2013460897",
+      merchantName: "ZILLON CONCEPT NIG",
+      terminalID: "8976543213",
+      amount: "100",
+      status: true,
+      pan: "653457****7856",
+      Receipt: "Veiw",
+    },
+    {
+      merchantName: "FAITH ADERONKE LTD",
+      terminalID: "8976543213",
+      amount: "970",
+      status: true,
+      pan: "653457****7856",
+      Receipt: "Veiw",
+    },
+    {
+      merchantName: "FAITH ADERONKE LTD",
+      terminalID: "8976543213",
       amount: "900",
+      status: true,
+      pan: "653457****7856",
+      Receipt: "Veiw",
+    },
+    {
+      merchantName: "FAITH ADERONKE LTD",
+      terminalID: "8976543213",
+      amount: "500",
+      status: true,
+      pan: "653457****7856",
+      Receipt: "Veiw",
+    },
+    {
+      merchantName: "FAITH ADERONKE LTD",
+      terminalID: "8976543213",
+      amount: "200",
+      status: true,
+      pan: "653457****7856",
+      Receipt: "Veiw",
+    },
+    {
+      merchantName: "FAITH ADERONKE LTD",
+      terminalID: "8976543213",
+      amount: "700",
       status: false,
       pan: "653457****7856",
       Receipt: "Veiw",
     },
     {
-      merchantName: "ABDUL COSMETICS",
-      terminalID: "2013460897",
-      amount: "900",
+      merchantName: "FAITH ADERONKE LTD",
+      terminalID: "8976543213",
+      amount: "300",
       status: false,
       pan: "653457****7856",
       Receipt: "Veiw",
     },
     {
-      merchantName: "ABDUL COSMETICS",
-      terminalID: "2013460897",
-      amount: "900",
+      merchantName: "FAITH ADERONKE LTD",
+      terminalID: "8976543213",
+      amount: "800",
       status: false,
       pan: "653457****7856",
       Receipt: "Veiw",
     },
     {
-      merchantName: "ABDUL COSMETICS",
-      terminalID: "2013460897",
-      amount: "900",
+      merchantName: "FAITH ADERONKE LTD",
+      terminalID: "8976543213",
+      amount: "700",
       status: false,
       pan: "653457****7856",
       Receipt: "Veiw",
     },
     {
-      merchantName: "ABDUL COSMETICS",
-      terminalID: "2013460897",
-      amount: "900",
+      merchantName: "FAITH ADERONKE LTD",
+      terminalID: "8976543213",
+      amount: "400",
       status: false,
       pan: "653457****7856",
       Receipt: "Veiw",
     },
     {
-      merchantName: "ABDUL COSMETICS",
-      terminalID: "2013460897",
-      amount: "900",
-      status: false,
-      pan: "653457****7856",
-      Receipt: "Veiw",
-    },
-    {
-      merchantName: "ABDUL COSMETICS",
-      terminalID: "2013460897",
-      amount: "900",
-      status: false,
-      pan: "653457****7856",
-      Receipt: "Veiw",
-    },
-    {
-      merchantName: "ABDUL COSMETICS",
-      terminalID: "2013460897",
-      amount: "900",
-      status: false,
-      pan: "653457****7856",
-      Receipt: "Veiw",
-    },
-    {
-      merchantName: "ABDUL COSMETICS",
-      terminalID: "2013460897",
-      amount: "900",
-      status: false,
-      pan: "653457****7856",
-      Receipt: "Veiw",
-    },
-    {
-      merchantName: "ABDUL COSMETICS",
-      terminalID: "2013460897",
-      amount: "900",
-      status: false,
-      pan: "653457****7856",
-      Receipt: "Veiw",
-    },
-    {
-      merchantName: "ABDUL COSMETICS",
-      terminalID: "2013460897",
-      amount: "900",
+      merchantName: "FAITH ADERONKE LTD",
+      terminalID: "8976543213",
+      amount: "500",
       status: false,
       pan: "653457****7856",
       Receipt: "Veiw",
     },
   ];
 
-  let td_data = data.map((item, idex) => (
+  let td_data = data.map((item, index) => (
     <tr key={item.id}>
+      <td>{index + 1}</td>
       <td>{item.merchantName}</td>
       <td>{item.terminalID}</td>
       <td>{item.amount}</td>
@@ -129,7 +130,18 @@ const DisplayTable = () => {
   ));
   return (
     <div>
-      <table>
+      <table className="table table-striped">
+        <thead>
+          <tr>
+            <th>S/N</th>
+            <th>Merchant Name</th>
+            <th>Terminal ID</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>PAN</th>
+            <th>Receipt</th>
+          </tr>
+        </thead>
         <tbody>{td_data}</tbody>
       </table>
     </div>

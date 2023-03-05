@@ -11,6 +11,10 @@
   line-height: 22px;
 }
 
+.nav-item:hover {
+  color: #4c6fff;
+}
+
 .color-dark {
   color: #1d242d;
   font-weight: 600;
@@ -21,4 +25,8 @@
 .navbar-items ul li svg {
   margin-right: 25px;
   margin-left: 10px;
+}
+
+.close {
+  display: none;
 }

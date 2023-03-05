@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SidebarList.css";
 import {
   MdOutlineDashboard,
@@ -18,6 +18,11 @@ import { AiOutlineReconciliation } from "react-icons/ai";
 import { ImHammer2 } from "react-icons/im";
 
 const SidebarList = () => {
+  const [expandTransactions, setExpandTransaction] = useState(true);
+
+  const handleExpandClick = () => {
+    setExpandTransaction(!expandTransactions);
+  };
   return (
     <React.Fragment>
       <div className="navbar-items">
@@ -27,10 +32,16 @@ const SidebarList = () => {
             <MdOutlineDashboard />
             Dashboard
           </li>
-          <li className="nav-item">
+          <li className="nav-item" onClick={handleExpandClick}>
             <GrAtm />
             Transactions
-            <BsChevronDown />
+            {expandTransactions ? <BsChevronUp /> : <BsChevronDown />}
+            <div>
+              <ul className={expandTransactions ? "" : "close"}>
+                <li className="inner-nav-item">Summary</li>
+                <li className="inner-nav-item">Transactions Report</li>
+              </ul>
+            </div>
           </li>
           <li className="nav-item">
             <MdHealthAndSafety />
