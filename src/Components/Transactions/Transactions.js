@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import { AiOutlineEye } from "react-icons/ai";
 import Box2 from "./Box2";
 import DisplayTable from "../../DisplayTable/DisplayTable";
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 const Transactions = () => {
   return (
@@ -18,6 +19,17 @@ const Transactions = () => {
           <Box2 text="Download Report" />
         </div>
         <DisplayTable />
+        <div className="centre">
+          <div className="flex">
+            <BsChevronLeft size={30} />
+            <h5>1</h5>
+            <h5>2</h5>
+            <h5>3</h5>
+            <h2>............</h2>
+            <h5>30</h5>
+            <BsChevronRight size={28} />
+          </div>
+        </div>
       </div>
     </div>
   );
