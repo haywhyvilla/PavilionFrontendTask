@@ -9,9 +9,12 @@ const Home = () => {
       <p>Reports of your transactions can be found here</p>
       <div className="trans-search">
         <div className="cta">
-          <input type={Text} placeholder="Search" />
+          <input
+            type={Text}
+            placeholder="Search for transactions e,g faith aderonke ltd"
+          />
         </div>
-        <Box />
+        <Box text="Search" />
       </div>
     </div>
   );

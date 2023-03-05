@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import menu from "../../Images/menu.png";
 import profile from "../../Images/Profile.jpg";
-import vector from "../../Images/Vector.png";
+import vector from "../../Images/notification.png";
 import { CiSearch } from "react-icons/ci";
 
 const Header = () => {

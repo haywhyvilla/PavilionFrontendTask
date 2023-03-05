@@ -2,4 +2,20 @@
 
 .section-trans {
   margin-left: 260px;
+  background-color: #f5f7f9;
+}
+
+.transaction-head {
+  background: #ffffff;
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.view-hide {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
