@@ -30,22 +30,40 @@ const Filter = () => {
           <h5>Filters</h5>
           <p>Cancel Filter</p>
         </div>
-        <div className="cta-filter">
-          <BsChevronRight />
+        <div className="cta-filter" onClick={handleExpandDate}>
+          {expandDate ? <BsChevronRight /> : <BsChevronDown />}
           <p>Date</p>
         </div>
-        <div className="cta-filter">
-          <BsChevronRight />
+        <div className="date">
+          <div className="year-month-date">
+            <input type={Text} placeholder="dd/mm/yy" />
+            <p>to</p>
+            <input type={Text} placeholder="dd/mm/yy" />
+          </div>
+        </div>
+        <div className="cta-filter" onClick={handleExpandPtsp}>
+          {expandPtsp ? <BsChevronRight /> : <BsChevronDown />}
           <p>PTSP</p>
         </div>
-        <div className="cta-filter">
-          <BsChevronRight />
+        <div className="date">
+          <div className="search">
+            <input type={Text} placeholder="Search for a Ptsp" />
+          </div>
+        </div>
+        <div className="cta-filter" onClick={handleExpandTerminal}>
+          {expandTerminal ? <BsChevronRight /> : <BsChevronDown />}
           <p>Terminal ID</p>
         </div>
-        <div className="cta-filter">
-          <BsChevronRight />
-          <p>Merchant Name</p>
+        <div className="date">
+          <div className="search">
+            <input type={Text} placeholder="Enter Terminal ID" />
+          </div>
         </div>
+        <div className="cta-filter" onClick={handleExpandStatus}>
+          {expandStatus ? <BsChevronRight /> : <BsChevronDown />}
+          <p>Status</p>
+        </div>
+        <div className="date"></div>
         <div className="cta-filter">
           <BsChevronRight />
           <p>Merchant ID</p>
@@ -56,7 +74,7 @@ const Filter = () => {
         </div>
         <div className="cta-filter">
           <BsChevronRight />
-          <p>Status</p>
+          <p>Merchant Name</p>
         </div>
         <div className="cta-filter">
           <BsChevronRight />

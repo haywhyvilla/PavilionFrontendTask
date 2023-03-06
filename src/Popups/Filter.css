@@ -1,5 +1,5 @@
 .section-filter {
-  margin-top: 300px;
+  margin-top: 200px;
   margin-left: 303px;
   width: 500px;
   height: 555px;
@@ -49,4 +49,54 @@
 .cta-filter p {
   padding-top: 15px;
   margin-left: 10px;
+}
+
+.cta-filter svg:hover,
+.cta-filter p:hover {
+  color: #4c6fff;
+}
+
+.date {
+  width: 500px;
+  height: 99px;
+  background: #f2f4f7;
+  opacity: 0.9;
+}
+
+.year-month-date {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 30px;
+  gap: 30px;
+  padding-top: 30px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 30px;
+  margin-left: 30px;
+}
+
+.year-month-date input {
+  padding: 12px 20px;
+  width: 121px;
+  height: 43px;
+  border: 1px solid #b2bbc6;
+  border-radius: 10px;
+  outline: none;
+}
+.year-month-date p {
+  padding-top: 20px;
+}
+
+.search input {
+  padding: 12px 20px;
+  width: 333px;
+  height: 40px;
+  border: 1px solid #b2bbc6;
+  border-radius: 10px;
+  outline: none;
 }
