@@ -32,6 +32,7 @@
   line-height: 19px;
   text-align: center;
   color: #4c6fff;
+  cursor: pointer;
 }
 .view-hide:hover {
   padding: 9px 16px;
