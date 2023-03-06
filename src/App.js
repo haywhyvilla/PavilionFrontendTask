@@ -9,6 +9,7 @@ import Filter from "./Popups/Filter";
 const App = () => {
   const [popupactive, setpopupactive] = useState(false);
   const [FieldPopupactive, setFieldPopupactive] = useState(false);
+  const [FilterPopupactive, setFilterPopupactive] = useState(false);
   return (
     <>
       <Header />
@@ -16,10 +17,13 @@ const App = () => {
       <Transactions
         setactive={setpopupactive}
         setfieldactive={setFieldPopupactive}
+        setFilterPopupactive={setFilterPopupactive}
       />
       {popupactive && <RecieptPopup setactive={setpopupactive} />}
       {FieldPopupactive && <FieldPopup setfieldactive={setFieldPopupactive} />}
-      <Filter />
+      {FilterPopupactive && (
+        <Filter setFilterPopupactive={setFilterPopupactive} />
+      )}
     </>
   );
 };

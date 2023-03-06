@@ -6,10 +6,10 @@ import Box2 from "./Box2";
 import DisplayTable from "../../DisplayTable/DisplayTable";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
-const Transactions = ({ setactive, setfieldactive }) => {
+const Transactions = ({ setactive, setfieldactive, setFilterPopupactive }) => {
   return (
     <div className="section-trans">
-      <Home />
+      <Home setFilterPopupactive={setFilterPopupactive} />
       <div className="trans-head">
         <div className="transaction-head">
           <div className="view-hide" onClick={() => setfieldactive(true)}>

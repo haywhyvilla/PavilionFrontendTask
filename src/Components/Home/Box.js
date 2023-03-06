@@ -1,9 +1,9 @@
-const Box = ({ color, text, setactive }) => {
+const Box = ({ color, text, setFilterPopupactive }) => {
   return (
     <button
       style={{ backgroundColor: color }}
       className="box"
-      onClick={() => setactive(true)}
+      onClick={() => setFilterPopupactive(true)}
     >
       {text}
     </button>

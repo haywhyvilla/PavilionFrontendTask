@@ -59,11 +59,13 @@
   overflow-y: scroll;
 }
 
-.receipt-blur {
+.myfilter-blur {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: #ffffffa2;
   filter: blur(3.5px);
+  -webkit-filter: blur(3.5px);
 }

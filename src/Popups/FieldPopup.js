@@ -4,7 +4,7 @@ import "./FieldPopup.css";
 const FieldPopup = ({ setfieldactive }) => {
   return (
     <>
-      <div className="receipt-blur"></div>
+      <div className="myfilter-blur"></div>
       <div className="section-field">
         <div className="field">
           <h5>Fields</h5>

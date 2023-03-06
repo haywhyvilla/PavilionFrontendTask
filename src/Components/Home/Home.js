@@ -2,7 +2,7 @@ import React from "react";
 import Box from "./Box";
 import "./Home.css";
 
-const Home = () => {
+const Home = ({ setFilterPopupactive }) => {
   return (
     <div className="home-content">
       <h1>Welcome back,</h1>
@@ -14,7 +14,7 @@ const Home = () => {
             placeholder="Search for transactions e,g faith aderonke ltd"
           />
         </div>
-        <Box text="Search" />
+        <Box text="Search" setFilterPopupactive={setFilterPopupactive} />
       </div>
     </div>
   );
