@@ -7,13 +7,17 @@ import FieldPopup from "./Popups/FieldPopup";
 
 const App = () => {
   const [popupactive, setpopupactive] = useState(false);
+  const [FieldPopupactive, setFieldPopupactive] = useState(false);
   return (
     <>
       <Header />
       <Sidebar />
-      <Transactions setactive={setpopupactive} />
+      <Transactions
+        setactive={setpopupactive}
+        setfieldactive={setFieldPopupactive}
+      />
       {popupactive && <RecieptPopup setactive={setpopupactive} />}
-      <FieldPopup />
+      {FieldPopupactive && <FieldPopup setfieldactive={setFieldPopupactive} />}
     </>
   );
 };

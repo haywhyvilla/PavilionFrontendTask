@@ -25,18 +25,27 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+  border: none;
+  background-color: inherit;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  color: #4c6fff;
+}
+.view-hide:hover {
+  padding: 9px 16px;
+  background: #4c6fff;
+  color: #ffffff;
+  border-radius: 10px;
 }
 
 .view-hide svg {
   font-size: 24px;
   color: #4c6fff;
 }
-.view-hide p {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 19px;
-  text-align: center;
-  color: #4c6fff;
+.view-hide svg:hover {
+  color: #ffffff;
 }
 
 .flex {

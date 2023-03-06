@@ -6,15 +6,15 @@ import Box2 from "./Box2";
 import DisplayTable from "../../DisplayTable/DisplayTable";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
-const Transactions = ({ setactive }) => {
+const Transactions = ({ setactive, setfieldactive }) => {
   return (
     <div className="section-trans">
       <Home />
       <div className="trans-head">
         <div className="transaction-head">
-          <div className="view-hide">
-            <AiOutlineEye />
-            <p>View/Hide Fields</p>
+          <div className="view-hide" onClick={() => setfieldactive(true)}>
+            <AiOutlineEye onClick={() => setfieldactive(true)} />
+            View/Hide Fields
           </div>
           <Box2 text="Download Report" setactive={setactive} />
         </div>
