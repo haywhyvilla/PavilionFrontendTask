@@ -6,7 +6,7 @@ import Box2 from "./Box2";
 import DisplayTable from "../../DisplayTable/DisplayTable";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
-const Transactions = () => {
+const Transactions = ({ setactive }) => {
   return (
     <div className="section-trans">
       <Home />
@@ -16,7 +16,7 @@ const Transactions = () => {
             <AiOutlineEye />
             <p>View/Hide Fields</p>
           </div>
-          <Box2 text="Download Report" />
+          <Box2 text="Download Report" setactive={setactive} />
         </div>
         <DisplayTable />
         <div className="centre">

@@ -5,6 +5,7 @@
   height: 96px;
   background: #ffffff;
   box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.05);
+  position: fixed;
 }
 
 .pavilion-head {

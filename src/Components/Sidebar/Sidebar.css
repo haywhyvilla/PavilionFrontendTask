@@ -1,5 +1,6 @@
 .sidebar-section {
   display: flex;
+  padding-top: 96px;
 }
 
 .sidebar {
