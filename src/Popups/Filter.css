@@ -1,0 +1,52 @@
+.section-filter {
+  margin-top: 300px;
+  margin-left: 303px;
+  width: 500px;
+  height: 555px;
+  background: #ffffff;
+  box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  margin: 10px 20px;
+}
+
+.filter h5 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #1d242d;
+}
+.filter p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4c6fff;
+  cursor: pointer;
+}
+
+.cta-filter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.cta-filter svg,
+.cta-filter p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1d242d;
+}
+
+.cta-filter p {
+  padding-top: 15px;
+  margin-left: 10px;
+}

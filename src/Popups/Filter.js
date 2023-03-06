@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Filter.css";
 import { BsChevronRight, BsChevronDown } from "react-icons/bs";
 
 const Filter = () => {
+  const [expandDate, setExpandDate] = useState(true);
+  const [expandPtsp, setExpandPtsp] = useState(true);
+  const [expandTerminal, setExpandTerminal] = useState(true);
+  const [expandStatus, setExpandStatus] = useState(true);
+
+  const handleExpandDate = () => {
+    setExpandDate(!expandDate);
+  };
+
+  const handleExpandPtsp = () => {
+    setExpandPtsp(!expandPtsp);
+  };
+
+  const handleExpandTerminal = () => {
+    setExpandTerminal(!expandTerminal);
+  };
+
+  const handleExpandStatus = () => {
+    setExpandStatus(!expandStatus);
+  };
   return (
     <div className="filter-blur">
       <div className="section-filter">
@@ -16,47 +36,47 @@ const Filter = () => {
         </div>
         <div className="cta-filter">
           <BsChevronRight />
-          <p>Date</p>
+          <p>PTSP</p>
         </div>
         <div className="cta-filter">
           <BsChevronRight />
-          <p>Date</p>
+          <p>Terminal ID</p>
         </div>
         <div className="cta-filter">
           <BsChevronRight />
-          <p>Date</p>
+          <p>Merchant Name</p>
         </div>
         <div className="cta-filter">
           <BsChevronRight />
-          <p>Date</p>
+          <p>Merchant ID</p>
         </div>
         <div className="cta-filter">
           <BsChevronRight />
-          <p>Date</p>
+          <p>Amount</p>
         </div>
         <div className="cta-filter">
           <BsChevronRight />
-          <p>Date</p>
+          <p>Status</p>
         </div>
         <div className="cta-filter">
           <BsChevronRight />
-          <p>Date</p>
+          <p>Branch</p>
         </div>
         <div className="cta-filter">
           <BsChevronRight />
-          <p>Date</p>
+          <p>Region</p>
         </div>
         <div className="cta-filter">
           <BsChevronRight />
-          <p>Date</p>
+          <p>PAN</p>
         </div>
         <div className="cta-filter">
           <BsChevronRight />
-          <p>Date</p>
+          <p>RRN</p>
         </div>
         <div className="cta-filter">
           <BsChevronRight />
-          <p>Date</p>
+          <p>Transaction Type</p>
         </div>
       </div>
     </div>
